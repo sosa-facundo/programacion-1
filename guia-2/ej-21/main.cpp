@@ -13,60 +13,122 @@ NOTA: Ninguna venta superar  las 10 carteras.
 */
 int main(){
 
+    int carterasVendidas;
+    int color;
+    int carterasBlanca=45;
+    int carterasNegro=50;
+    int carterasMarron=40;
+    int carterasGris=49;
 
-int carterasVendidas;
-int color;
-int carterasBlanca=45;
-int carterasNegro=50;
-int carterasMarron=40;
-int carterasGris=49;
-///LOTE DE INGRESO
-cout<<"Ingrese la cantidad de carteras que desees comprar. Esta compra no debe superar a 10 unidades totales."<<endl;
-cin>>carterasVendidas;
+    ///COMPRA 1
+    cout<<"Ingrese la cantidad de carteras que desees comprar. Esta compra no debe superar a 10 unidades totales."<<endl;
+    cin>>carterasVendidas;
 
+    if(carterasVendidas>0&&carterasVendidas<=10){
+        cout<<"ingrese el color de la primer venta. Ingresando |1|Blanco. |2|Negro. |3|Marron. |4|Gris. ";
+        cin>>color;
 
-///LOTE DE PROCESO
-if(carterasVendidas>0&&carterasVendidas<=10){
-cout<<"ingrese el color de la primer venta. Ingresando |1|Blanco. |2|Negro. |3|Marron. |4|Gris. ";
-cin>>color;
-switch (color){
-case 1:
-    cout<<"haz comprado "<<carterasVendidas<< " carteras blancas."<<endl;
-    carterasBlanca=carterasBlanca-carterasVendidas;
+        switch (color){
+            case 1:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras blancas."<<endl;
+                carterasBlanca=carterasBlanca-carterasVendidas;
+                break;
 
+            case 2:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras negro."<<endl;
+                carterasNegro=carterasNegro-carterasVendidas;
+                break;
 
-break;
-case 2:
-    cout<<"haz comprado "<<carterasVendidas<< " carteras negro."<<endl;
-    carterasNegro=carterasNegro-carterasVendidas;
+            case 3:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras marron."<<endl;
+                carterasMarron=carterasMarron-carterasVendidas;
+                break;
 
+            case 4:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras grises."<<endl;
+                carterasGris=carterasGris-carterasVendidas;
+                break;
+        }
+    }
+    else{
+        cout<<endl<<"no haz ingresado un numero entre 1 y 10. "<<endl;
+    }
 
-break;
-case 3:
-    cout<<"haz comprado "<<carterasVendidas<< " carteras marron."<<endl;
-    carterasMarron=carterasMarron-carterasVendidas;
+    ///COMPRA 2
 
+    cout<<"Ingrese la cantidad de carteras que desees comprar. Esta compra no debe superar a 10 unidades totales."<<endl;
+    cin>>carterasVendidas;
 
-break;
-case 4:
-    cout<<"haz comprado "<<carterasVendidas<< " carteras grises."<<endl;
-    carterasGris=carterasGris-carterasVendidas;
+    if(carterasVendidas>0&&carterasVendidas<=10){
+        cout<<"ingrese el color de la primer venta. Ingresando |1|Blanco. |2|Negro. |3|Marron. |4|Gris. ";
+        cin>>color;
 
+        switch (color){
+            case 1:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras blancas."<<endl;
+                carterasBlanca=carterasBlanca-carterasVendidas;
+                break;
 
-break;
-}
-}
-else{
-    cout<<endl<<"no haz ingresado un numero entre 1 y 10. "<<endl;
-}
+            case 2:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras negro."<<endl;
+                carterasNegro=carterasNegro-carterasVendidas;
+                break;
 
-/// MOSTRAR DATOS DE SALIDA
-cout<<endl<<"Quedaron en stock "<<carterasBlanca<<" carteras Blancas."<<endl;
-cout<<endl<<"Quedaron en stock "<<carterasNegro<<" carteras Negras."<<endl;
-cout<<endl<<"Quedaron en stock "<<carterasGris<<" carteras Grises."<<endl;
-cout<<endl<<"Quedaron en stock "<<carterasMarron<<" carteras Marrones."<<endl;
+            case 3:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras marron."<<endl;
+                carterasMarron=carterasMarron-carterasVendidas;
+                break;
 
-///
+            case 4:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras grises."<<endl;
+                carterasGris=carterasGris-carterasVendidas;
+                break;
+        }
+    }
+    else{
+        cout<<endl<<"no haz ingresado un numero entre 1 y 10. "<<endl;
+    }
 
-return 0;
+    ///COMPRA 3
+
+    cout<<"Ingrese la cantidad de carteras que desees comprar. Esta compra no debe superar a 10 unidades totales."<<endl;
+    cin>>carterasVendidas;
+
+    if(carterasVendidas>0&&carterasVendidas<=10){
+        cout<<"ingrese el color de la primer venta. Ingresando |1|Blanco. |2|Negro. |3|Marron. |4|Gris. ";
+        cin>>color;
+
+        switch (color){
+            case 1:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras blancas."<<endl;
+                carterasBlanca=carterasBlanca-carterasVendidas;
+                break;
+
+            case 2:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras negro."<<endl;
+                carterasNegro=carterasNegro-carterasVendidas;
+                break;
+
+            case 3:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras marron."<<endl;
+                carterasMarron=carterasMarron-carterasVendidas;
+                break;
+
+            case 4:
+                cout<<"haz comprado "<<carterasVendidas<< " carteras grises."<<endl;
+                carterasGris=carterasGris-carterasVendidas;
+                break;
+        }
+    }
+    else{
+        cout<<endl<<"no haz ingresado un numero entre 1 y 10. "<<endl;
+    }
+
+    /// MOSTRAR DATOS DE SALIDA
+    cout<<endl<<"Quedaron en stock "<<carterasBlanca<<" carteras Blancas."<<endl;
+    cout<<endl<<"Quedaron en stock "<<carterasNegro<<" carteras Negras."<<endl;
+    cout<<endl<<"Quedaron en stock "<<carterasGris<<" carteras Grises."<<endl;
+    cout<<endl<<"Quedaron en stock "<<carterasMarron<<" carteras Marrones."<<endl;
+
+    return 0;
 }
