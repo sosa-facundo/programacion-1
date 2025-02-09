@@ -11,7 +11,7 @@ int main(){
 
     for(int i=1; i<=numero;i++){
         if (numero%i==0 && i%2==0){
-            cout<<i<<" Es divisor de "<<numero<<" y es un numero par."<<endl;
+            cout<<endl<<i<<" Es divisor de "<<numero<<" y es un numero par."<<endl;
         }
     }
 
