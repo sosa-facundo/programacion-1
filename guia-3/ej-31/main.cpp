@@ -11,9 +11,10 @@ int main (){
     int numeros;
     int mayorMayor;
     int segundoMayor;
+
+    cout<< "Ingresar 10 numeros= "<<endl;
     for (int i=1 ;i<=10 ; i++)
     {
-        cout<< "Ingresar 10 numeros= "<<endl;
         cin>>numeros;
         if(i==1)
         {
