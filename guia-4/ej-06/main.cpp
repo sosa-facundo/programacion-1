@@ -6,16 +6,25 @@ Ejemplo: 4, -3, 8, -5, 18, 20, 0. Se listar  Positivos: 4 Negativos: 2.
 Para resolver este ejercicio sugerimos resolver antes el TP3 EJ 7*/
 int main(){
     int numero;
-    int contadorPositivo=0;
+    int positivoCant=0;
+    int negativoCant=0;
 
     do
     {
+        cout<<"ingrese otro numero #: "<<endl;
         cin>>numero;
-        if(numero>0)
+
+        if (numero>0)
         {
-            contadorPositivo=contadorPositivo+1;
+            positivoCant++;
         }
-    } while(numero!=0);
-    cout<<"son = "<<contadorPositivo<<" numeros positivos.";
+        if (numero<0)
+        {
+            negativoCant++;
+        }
+    } while (numero!=0);
+
+    cout<<" La cantidad de positivos es: "<<positivoCant<<endl;
+    cout<<" La cantidad de negativos es: "<<negativoCant<<endl;
 return 0;
 }
