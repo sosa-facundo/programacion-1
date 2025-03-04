@@ -32,11 +32,11 @@ int main (){
     }
     if(numeros==cuentaPerfectos)
     {
-        cout<<" EL NUMERO ES PERFECTO."<<endl;
+        cout<<" EL NUMERO ES PERFECTO. "<<endl;
     }
     else
     {
-        cout<< " EL NUMERO NO ES PERFECTO."<<endl;
+        cout<< " EL NUMERO NO ES PERFECTO. "<<endl;
     }
 
 
