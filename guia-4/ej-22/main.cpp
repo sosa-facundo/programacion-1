@@ -43,6 +43,6 @@ int main (){
             cuentaTerna=0;
         }
     }
-    cout<<" La cantidad de ternas de numeros negativos es= "<<cantidadDeTernasNegativas<<endl;
+    cout<<" La cantidad de ternas de numeros negativos es= "<<cantidadDeTernasNegativas<<endl<<endl;
 return 0;
 }
